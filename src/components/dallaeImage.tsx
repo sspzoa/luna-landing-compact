@@ -12,7 +12,7 @@ export const DallaeImage = () => {
             className="relative"
             style={{
                 transform: `translate(${position.x}px, ${position.y}px)`,
-                transition: 'transform 0.5s ease-out',
+                transition: 'transform 0.25s ease-out',
             }}>
             <Image draggable={false} className="translate-x-1/4" src="/images/dallae.png" alt="dallae" width={250} height={312} />
         </div>
