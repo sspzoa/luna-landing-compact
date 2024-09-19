@@ -1,7 +1,8 @@
-import { faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
 import Link from 'next/link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import {DallaeImage} from "@/components/dallaeImage";
 
 export default function Home() {
   return (
@@ -38,13 +39,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <Image
-          className="translate-x-1/4 hover:scale-125 ease-in-out duration-500"
-          src="/images/dale.png"
-          alt="dale"
-          width={250}
-          height={312}
-        />
+        <DallaeImage />
       </div>
     </div>
   );
