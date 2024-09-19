@@ -33,7 +33,7 @@ export function useDallaePosition(): Position {
         };
 
         const handleClick = () => {
-            alert("오... 대단하시네요..ㅋㅋㅋㅋㅋㅋㅋㅋ");
+            alert("💜");
         };
 
         const dallaeImage = document.getElementById('dallae-image-container');
