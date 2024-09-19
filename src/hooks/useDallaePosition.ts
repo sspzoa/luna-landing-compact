@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import type {Position} from "@/types/Position";
+import type { Position } from "@/types/Position";
 
 export function useDallaePosition(): Position {
     const [position, setPosition] = useState<Position>({ x: 0, y: 0 });
@@ -32,8 +32,23 @@ export function useDallaePosition(): Position {
             }
         };
 
+        const handleClick = () => {
+            alert("오... 대단하시네요..ㅋㅋㅋㅋㅋㅋㅋㅋ");
+        };
+
+        const dallaeImage = document.getElementById('dallae-image-container');
+        if (dallaeImage) {
+            dallaeImage.addEventListener('click', handleClick);
+        }
+
         window.addEventListener('mousemove', handleMouseMove);
-        return () => window.removeEventListener('mousemove', handleMouseMove);
+
+        return () => {
+            window.removeEventListener('mousemove', handleMouseMove);
+            if (dallaeImage) {
+                dallaeImage.removeEventListener('click', handleClick);
+            }
+        };
     }, []);
 
     return position;
