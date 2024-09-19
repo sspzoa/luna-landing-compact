@@ -43,7 +43,7 @@ export default function Home() {
           src="/images/dale.png"
           alt="dale"
           width={250}
-          height={100}
+          height={312}
         />
       </div>
     </div>
