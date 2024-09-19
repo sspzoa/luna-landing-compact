@@ -16,8 +16,8 @@ export function useDallaePosition(): Position {
                 const deltaY = e.clientY - centerY;
 
                 const distance = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
-                const maxDistance = 400;
-                const maxMove = 1500;
+                const maxDistance = 300;
+                const maxMove = 2000;
 
                 if (distance < maxDistance) {
                     const angle = Math.atan2(deltaY, deltaX);
